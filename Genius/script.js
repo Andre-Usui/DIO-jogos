@@ -28,12 +28,12 @@ let shuffleOrder =() => {
 
 //acende a próxima cor
 let lightColor = (element, number) => {
-    number = number * 300;          // porque?
+    number = number * 300;                      // porque?
     setTimeout(() => {
         element.classList.add('selected');    
-    }, number);               //tempo de aceso | atenção à vírgula
+    }, number);                                 //tempo de aceso | atenção à vírgula
     setTimeout(() => {
-        element.classList.remove('selected');
+        element.classList.remove('selected');   //não está sendo acionado - solucionar urgente!
         
     });
 }
