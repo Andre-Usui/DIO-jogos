@@ -1,4 +1,35 @@
 body{
+    background-color: rgb(154, 254, 254);
     text-align: center;
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-size: 50px;
+    color: rgb(21, 21, 21);
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background-color: rgb(233, 233, 233);
+    display: inline-block;
+    padding: 48px;
+    margin: 5px;
+    font-size: 60px;
+    color: rgb(233, 233, 233);
+}
+
+.jogador-selecionado, .vencedor-selecionado {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color:rgb(199, 199, 177);
+    border-radius: 20%;
 }
