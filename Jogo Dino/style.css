@@ -1,5 +1,5 @@
 body {
-    background: #fafafa;
+    background: #fff;
   }
   
   .dino {
@@ -8,6 +8,14 @@ body {
     background-image: url(dino.png);
     width: 60px;
     height: 60px;
+
+
+  }
+  .rollando {
+        animation: spin 0.7s;
+        -webkit-animation: spin 0.7s;
+        animation-timing-function: linear;
+
   }
   
   .cactus {
@@ -19,10 +27,19 @@ body {
   }
   
   .game-over {
-    text-align: center;
     color: #666;
-    margin: 50px 0;
+    margin: 50px 5px 0 50px;
     font-family: arial;
+  }
+
+  button {
+    width: 200px;
+    height: 60px;
+    margin: 50px 0 0 50px;
+    color: #666;
+    font-family: arial;
+    outline: none;
+    border-radius: 8px;
   }
   
   @keyframes slideright {
@@ -33,6 +50,16 @@ body {
         background-position: 0%;
     }
   }
+  
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    } 
+    100% {
+        transform: rotate(360deg);   
+    }    
+  }
+
   
   .background {
     position: absolute;
@@ -45,9 +72,9 @@ body {
     height: 200px;
   }
 
-h2 {
+h2, h3{
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 5vh;
     color: #666;
     font-family: arial;
 }
